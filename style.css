@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+.header{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    background-color: blueviolet;
+}
+.header h1{
+    margin: 0;
+    margin-top: 7px;
+    font-size: 2.4rem;
+    font-family: 'Caveat', cursive;
+}
+.header img{
+    width: 50px;
+}
+.btn-floating{
+    right: 30px;
+    bottom: 30px;
+    position: absolute !important;
+    background-color:#ffffff !important;
+    box-shadow: 0px 0px 7px 4px #848484a6 !important;
+}
+.btn-floating i{
+    color: #848484 !important;
+}
+.btn-floating:hover{
+    background-color: #eee !important;
+    box-shadow: 0px 0px 7px 4px #848484a6 !important;
+}
+.newtask{
+    padding: 10px;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.newtask input{
+    font-weight: 500;
+    margin: 10px !important;
+    width: 500px !important;
+    font-size: 18px !important;
+    border-radius: 5px !important;
+    padding-left: 10px !important;
+    padding-right: 15px !important;
+    background-color: white !important;
+    border: 2px solid #eeeeee !important;
+    box-shadow: 0px 0px 3px 3px #cccccc inset !important;
+}
+.newtask button , .TaskBox button{
+    height: 40px;
+    width: 100px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-top: 15px !important;
+    font-family: 'Caveat', cursive;
+    background-color: white !important;
+    box-shadow: 0px 0px 3px 3px #cccccc;
+    border: 2px solid #eeeeee !important;
+    color: rgba(0, 0, 0, 0.637) !important;
+}
+.newtask button:nth-child(3){
+    margin-left: 11px;
+}
+.newtask button:active{
+    transform: scale(0.8) !important;
+    background-color: rgba(255, 255, 255, 0.774) !important;
+}
+.newtask button:hover{
+    background-color: rgba(255, 255, 255, 0.774) !important;
+}
+.TaskContainer{
+    width: 100%;
+    height: 100px;
+}   
+.TaskBox{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+.TaskBox input{
+    font-family: cursive;
+    border: 0px !important;
+    padding: 8px !important;
+    height: 25px !important;
+    width: 500px !important; 
+    color: rgba(0, 0, 0, 0.637);
+    padding-left: 10px !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    border: 2px solid #eeeeee !important;
+    box-shadow: 0px 0px 3px 3px #cccccc inset !important;
+}
+.TaskBox button{
+    height: 38px !important;
+    margin-top: 4px !important;
+    margin-left: 10px !important;
+}
+.TaskBox input:focus,.TaskBox button:focus{
+    outline: none;
+}
+.TaskBox button:active  {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width:779px){
+    div.newtask{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    div.newtask input{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:455px){
+    div.TaskBox input{
+        width: 200px !important;
+    }
+    div.TaskBox button{
+        width: 100px !important;
+    }
+}
+@media screen and (max-width:376px){
+    div.TaskBox input{
+        width: 150px !important;
+    }
+    div.TaskBox button{
+        font-size: 17px;
+    }
+    div.newtask button{
+        height: auto;
+        padding: 7px;
+        font-size: large;
+    }
+}
+@media screen and (max-width:300px){
+    div.TaskBox input{
+        font-size: small;
+        width: 80% !important;
+    }
+    div.TaskBox button{
+        font-size: 17px;
+    }
+}

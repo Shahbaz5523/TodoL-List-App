@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header z-depth-2">
+        <img src="todo.png" alt="img not found" />
+        <h1>Todo List</h1>
+    </div>
+
+    <a class="btn-floating btn-large waves-effect waves-light pulse" onclick="addNewTodo()">
+        <i class="material-icons">add</i>
+    </a>
+
+    <div class="newtask">
+        <input type="text" id="task" placeholder="Add New Task..." />
+        <button onClick=addTask()>Add Task</button>
+        <button onClick=removeAll()>Remove All</button>
+    </div>
+
+    <div class="TaskContainer">
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
